@@ -8,7 +8,6 @@ class JatekController {
         const jatekterModell = new JatekterModell(meret);
 
         $(window).on("lampaKapcsolas", (event) => {
-            console.log('lampakapcsolas')
             jatekterModell.szomszedokSzinenekValtoztatasa(event.detail);
             const tomb = jatekterModell.getJatekterTomb();
             jatekterView.setLampaAllapota(tomb);
